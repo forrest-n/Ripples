@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="upload-panel">
+      <label id="upload-label" for="file-input">+ Upload Song</label>
+      <input type="file" id="file-input" accept="audio/*" multiple />
+      <div id="song-list"></div>
+    </div>
+
+    <div id="controls">
+      
+      <button class="btn" id="clear-btn">Clear</button>
+    </div>
+
+    <div id="now-playing">
+      <span id="np-title">—</span>
+      <div id="vis-bars"></div>
+    </div>
+
+    <div id="hint">upload a song · click to ripple</div>
+    <div id="loading"><p>Loading song…</p></div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
